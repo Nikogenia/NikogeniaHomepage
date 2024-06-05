@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       screens: {
-        'tall': { 'raw': '(min-width: 600px) and (min-height: 800px)' },
+        'tall': { 'raw': '(min-width: 600px) and (min-height: 850px)' },
       }
     },
   },

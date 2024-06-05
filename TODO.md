@@ -1,5 +1,6 @@
 # TODO
 - Meta description fix
+- Favicon fix
 - Imprint page
 - Privacy page
 - Project page
