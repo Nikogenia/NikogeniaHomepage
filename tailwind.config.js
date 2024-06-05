@@ -17,7 +17,11 @@ export default {
       'divider': '#8f8f8f',
       'accent': '#ffbf00',
     },
-    extend: {},
+    extend: {
+      screens: {
+        'tall': { 'raw': '(min-width: 600px) and (min-height: 800px)' },
+      }
+    },
   },
   plugins: [
     require('tailwindcss-animated')
