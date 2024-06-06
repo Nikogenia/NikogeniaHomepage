@@ -33,7 +33,7 @@
   }
 }
 
-@keyframes bounce-custom {
+@keyframes bounce-projects {
   0%, 100% {
     transform: none;
     animation-timing-function: cubic-bezier(0.4,0,0.6,1);
@@ -44,9 +44,22 @@
   }
 }
 
-.hover\:animate-bounce-custom:hover {
-  animation: bounce-custom var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
+.hover\:animate-bounce-projects:hover {
+  animation: bounce-projects var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
 }
-.hover\:animate-bounce-custom:hover {
+.hover\:animate-bounce-projects:hover {
   animation-composition: var(--tw-animate-composition);
+}
+
+@keyframes ping-zoom {
+    25%, 0% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+.animate-ping-zoom {
+    animation: ping-zoom var(--tw-animate-duration, 1s) var(--tw-animate-easing, cubic-bezier(0, 0, 0.2, 1)) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
+}
+.animate-ping-zoom {
+    animation-composition: var(--tw-animate-composition);
 }
