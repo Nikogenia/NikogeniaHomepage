@@ -7,6 +7,7 @@ let input = Object.fromEntries(htmlFiles.map(file => [relative('src', file.slice
 
 export default {
     root: "./src",
+    publicDir: "../public",
     build: {
         outDir: "../build",
         emptyOutDir: true,

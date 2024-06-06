@@ -8,27 +8,27 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(/assets/fonts/Farro-Light.ttf) format('truetype');
+    src: url(/fonts/Farro-Light.ttf) format('truetype');
   }
   @font-face {
     font-family: 'Farro';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/assets/fonts/Farro-Regular.ttf) format('truetype');
+    src: url(/fonts/Farro-Regular.ttf) format('truetype');
   }
   @font-face {
     font-family: 'Farro';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(/assets/fonts/Farro-Medium.ttf) format('truetype');
+    src: url(/fonts/Farro-Medium.ttf) format('truetype');
   }
   @font-face {
     font-family: 'Farro';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(/assets/fonts/Farro-Bold.ttf) format('truetype');
+    src: url(/fonts/Farro-Bold.ttf) format('truetype');
   }
 }
