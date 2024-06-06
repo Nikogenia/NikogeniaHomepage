@@ -17,13 +17,21 @@ export default {
       'divider': '#8f8f8f',
       'accent': '#ffbf00',
     },
-    extend: {
-      screens: {
-        'tall': { 'raw': '(min-width: 600px) and (min-height: 850px)' },
-      }
+    screens: {
+      'x-sm': '640px',
+      'x-md': '768px',
+      'x-lg': '1024px',
+      'x-xl': '1280px',
+      'x-2xl': '1536px',
+      'y-sm': { 'raw': '(min-height: 640px)' },
+      'y-md': { 'raw': '(min-height: 768px)' },
+      'y-lg': { 'raw': '(min-height: 1024px)' },
+      'y-xl': { 'raw': '(min-height: 1280px)' },
+      'y-2xl': { 'raw': '(min-height: 1536px)' },
     },
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('tailwind-scrollbar-hide'),
   ],
 }

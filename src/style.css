@@ -32,3 +32,21 @@
     src: url(/fonts/Farro-Bold.ttf) format('truetype');
   }
 }
+
+@keyframes bounce-custom {
+  0%, 100% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0.4,0,0.6,1);
+  }
+  50% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+}
+
+.hover\:animate-bounce-custom:hover {
+  animation: bounce-custom var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, infinite) var(--tw-animate-fill, none);
+}
+.hover\:animate-bounce-custom:hover {
+  animation-composition: var(--tw-animate-composition);
+}
