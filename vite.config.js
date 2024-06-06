@@ -2,12 +2,18 @@ import { resolve, relative, extname } from 'path';
 import { glob } from 'glob';
 import handlebars from 'vite-plugin-handlebars';
 
-let htmlFiles = await glob('src/**/*.html', { ignore: 'src/components/**' })
-let input = Object.fromEntries(htmlFiles.map(file => [relative('src', file.slice(0, file.length - extname(file).length)), resolve(__dirname, file)]))
+let sourceFiles = await glob('src/**/*.html', { ignore: 'src/components/**' })
+let input = Object.fromEntries(sourceFiles.map(file => [relative('src', file.slice(0, file.length - extname(file).length)), resolve(__dirname, file)]))
+
+let componentFiles = await glob('src/components/**', { withFileTypes: true })
+let partialDirs = componentFiles.filter(file => file.isDirectory()).map(dir => dir.fullpath())
 
 export default {
     root: "./src",
     publicDir: "../public",
+    server: {
+        host: true,
+    },
     build: {
         outDir: "../build",
         emptyOutDir: true,
@@ -15,7 +21,11 @@ export default {
             input: input,
         },
     },
+    preview: {
+        host: true,
+        port: 8080,
+    },
     plugins: [handlebars({
-        partialDirectory: resolve(__dirname, 'src/components')
+        partialDirectory: partialDirs
     })],
 }

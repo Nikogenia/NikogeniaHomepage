@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="{{lang}}">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/x-icon" href="/icons/fav/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/fav/favicon-16x16.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script type="module" src="/main.js"></script>
+
+    <title>{{title}}</title>
+    <meta name="description" content={{>description}}>
+    <meta name="keywords" content="Nikogenia, Nikolas, Beyer, Portfolio, Homepage">
+
+  </head>
+
+  <body class="bg-background">
+
+    <div class="font-sans text-sm sm:text-base text-primary-text
+    p-4 sm:p-8 w-full min-h-[100svh] flex flex-col justify-between">
+      {{>content}}
+    </div>
+
+  </body>
+
+</html>
