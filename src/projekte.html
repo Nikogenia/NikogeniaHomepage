@@ -5,10 +5,13 @@
 {{/inline}}
 
 {{#*inline "content"}}
-    
-{{>header home="visible" en="/en/projects" zh="/zh/项目"}}
 
-<main class="flex flex-col items-center space-y-8 mb-8 overflow-y-scroll">
+<div class="fixed top-0 left-0 h-full w-full flex flex-col justify-between p-6 x-sm:p-9">
+  {{>header home="visible" en="/en/projects" zh="/zh/项目"}}
+  {{>footer}}
+</div>
+    
+<main class="flex flex-col items-center space-y-8 mt-16">
 
   <div class="text-center space-y-2
   animate-ping-zoom animate-once animate-duration-700 animate-ease-out">
@@ -38,8 +41,6 @@
   </div>
 
 </main>
-
-{{>footer}}
 
 {{/inline}}
 
