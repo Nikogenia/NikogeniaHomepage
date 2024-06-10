@@ -47,8 +47,12 @@
     transform: none;
     animation-timing-function: cubic-bezier(.19,0,.33,.73);
   }
-  50% {
-    transform: translateY(-10%);
+  25% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(.57,.34,.81,.99);
+  }
+  75% {
+    transform: translateY(5%);
     animation-timing-function: cubic-bezier(.57,.34,.81,.99);
   }
 }
