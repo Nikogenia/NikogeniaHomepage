@@ -11,7 +11,7 @@ export default {
       'background': '#112941',
       'primary': '#3270af',
       'primary-light': '#5b9fe2',
-      'primary-dark': '#214b75',
+      'primary-dark': '#275787',
       'primary-text': '#ffffff',
       'secondary-text': '#c2c2c2',
       'divider': '#8f8f8f',

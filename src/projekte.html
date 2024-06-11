@@ -4,20 +4,38 @@
 "Makerspace Arcade, Space Balloon, Frag Nikogenia, MineTower, Particle Simulation, ..."
 {{/inline}}
 
+{{#*inline "style-div"}}
+!p-0
+{{/inline}}
+
 {{#*inline "content"}}
 
-<div class="fixed top-0 left-0 h-full w-full flex flex-col justify-between p-6 x-sm:p-9">
+<div class="fixed z-10 top-0 left-0 h-full w-full flex flex-col justify-between p-6 x-sm:p-9">
   {{>header home="visible" en="/en/projects" zh="/zh/项目"}}
   {{>footer}}
 </div>
     
-<main class="flex flex-col items-center space-y-8">
+<main>
 
-  <div class="h-[100svh]">
+  <div class="h-[100svh] w-full flex items-end">
+    <div class="fixed w-full h-full -z-30 flex justify-center items-center">
+      <div class="text-center space-y-2
+      animate-ping-zoom animate-once animate-duration-700 animate-ease-out">
+        <h1 class="font-bold text-5xl x-sm:text-6xl">Projekte</h1>
+        <p class="font-light">Lasst uns auf eine Reise gehen!</p>
+      </div>
+    </div>
+    <svg viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="none"
+    class="w-full h-[20svh] animate-fade-up animate-duration-1000 animate-delay-500">
+      <path d="M0 128L148 144L295 111L443 119L591 86L738 90L886 80L1034 113L1182 125L1329 80L1477 91L1625 140L1772 174L1920 181L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#112941"></path><path d="M0 212L148 131L295 166L443 124L591 144L738 188L886 116L1034 135L1182 143L1329 123L1477 194L1625 174L1772 135L1920 164L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#14304c"></path><path d="M0 170L148 208L295 166L443 238L591 238L738 203L886 212L1034 231L1182 193L1329 150L1477 150L1625 211L1772 195L1920 231L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#183857"></path><path d="M0 214L148 211L295 249L443 257L591 235L738 245L886 203L1034 232L1182 219L1329 231L1477 203L1625 232L1772 237L1920 214L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#1b3f63"></path><path d="M0 272L148 296L295 304L443 300L591 261L738 247L886 273L1034 249L1182 245L1329 283L1477 293L1625 259L1772 289L1920 264L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#1f476f"></path><path d="M0 340L148 281L295 327L443 336L591 292L738 287L886 283L1034 282L1182 291L1329 312L1477 326L1625 327L1772 306L1920 302L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#234f7b"></path><path d="M0 348L148 367L295 369L443 358L591 361L738 340L886 357L1034 352L1182 354L1329 332L1477 337L1625 373L1772 347L1920 325L1920 401L1772 401L1625 401L1477 401L1329 401L1182 401L1034 401L886 401L738 401L591 401L443 401L295 401L148 401L0 401Z" fill="#275787"></path>
+    </svg>
+  </div>
+
+  <div class="h-[100svh] w-full flex items-center bg-primary-dark">
     <div class="text-center space-y-2
     animate-ping-zoom animate-once animate-duration-700 animate-ease-out">
       <h1 class="font-bold text-5xl x-sm:text-6xl">Projekte</h1>
-      <p class="font-light">Wie erreicht man mich?</p>
+      <p class="font-light">Lasst uns auf eine Reise gehen!</p>
     </div>
   </div>
 
