@@ -16,6 +16,7 @@ export default {
       'secondary-text': '#c2c2c2',
       'divider': '#8f8f8f',
       'accent': '#ffbf00',
+      'black': '#000000',
     },
     screens: {
       'x-sm': '640px',

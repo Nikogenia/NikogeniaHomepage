@@ -1,0 +1,41 @@
+{{#>layout lang="de" title="Impressum | Nikogenia"}}
+
+{{#*inline "description"}}
+"Verantwortlich für den Inhalt ist Nikolas Beyer"
+{{/inline}}
+
+{{#*inline "content"}}
+    
+{{>header home="visible" en="/en/legal-notice" zh="/zh/版权"}}
+
+<main class="flex flex-col items-center space-y-8 mb-6 y-md:mb-8">
+
+  <div class="text-center space-y-2
+  animate-ping-zoom animate-once animate-duration-700 animate-ease-out">
+    <h1 class="font-bold text-5xl x-sm:text-6xl">Impressum</h1>
+    <p class="font-light">Wer ist verantwortlich?</p>
+  </div>
+
+  <div class="space-y-4 flex flex-col items-center">
+    <div class="text-center text-3xl animate-fade-up animate-delay-[150ms] animate-duration-700 animate-ease-out">
+      Nikolas Beyer
+    </div>
+
+    <a href="/kontakt" title="Kontakt"
+    class="px-8 py-3 rounded-md bg-primary bg-opacity-50 hover:bg-accent hover:text-background transition-colors text-xl
+    animate-fade-up animate-delay-[200ms] animate-duration-700 animate-ease-out">
+      <p>Kontakt</p>
+    </a>
+  </div>
+
+  <div class="text-center max-w-[30rem] animate-fade-up animate-delay-[300ms] animate-duration-700 animate-ease-out">
+    Dies ist nach §5 des Telemediengesetzes kein vollständiges Impressum, da eine ladungsfähige Anschrift fehlt. Rechtlich ist dies jedoch nicht notwendig, da die Website keine kommerziellen Zwecke verfolgt.
+  </div>
+
+</main>
+
+{{>footer}}
+
+{{/inline}}
+
+{{/layout}}
