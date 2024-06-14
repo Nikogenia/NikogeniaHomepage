@@ -10,11 +10,14 @@
 
 {{#*inline "content"}}
 
-<div class="fixed z-10 top-0 left-0 h-full w-full flex flex-col justify-between p-6 x-sm:p-9">
+<div class="fixed z-10 top-0 left-0 w-full flex flex-col justify-start p-6 x-sm:p-9">
   {{>header home="visible" en="/en/projects" zh="/zh/项目"}}
-  {{>footer}}
 </div>
     
+<div class="fixed z-10 bottom-0 left-0 w-full flex flex-col justify-end p-6 x-sm:p-9">
+  {{>footer}}
+</div>
+
 <main>
 
   <div class="h-[120svh] w-full flex items-end">
