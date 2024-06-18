@@ -37,25 +37,25 @@ updateMousePosition();
 // scroll
 
 let scrollY = window.scrollY;
-let scrollSection = scrollY / window.innerHeight;
+let scrollSection = scrollY / document.documentElement.clientHeight;
+let section1 = document.querySelector(".section-1");
+let section2 = document.querySelector(".section-2");
 
 function onScroll() {
 
   scrollY = window.scrollY;
-  scrollSection = scrollY / window.innerHeight;
+  scrollSection = scrollY / document.documentElement.clientHeight;
 
-  console.log(scrollY, scrollSection);
+  document.documentElement.style.setProperty("--scroll-section1", Math.max(0, Math.min(1, (scrollSection - 0.8) * 3)));
+  document.documentElement.style.setProperty("--scroll-section2", Math.max(0, Math.min(1, (scrollSection - 2.2) * 3)));
 
-  document.documentElement.style.setProperty("--scroll-y", window.scrollY);
-  document.documentElement.style.setProperty("--scroll-section", scrollSection);
-
-  if (scrollSection > 1) {
-    document.documentElement.style.setProperty("--scroll-section1", 1);
-  }
-  else {
-    document.documentElement.style.setProperty("--scroll-section1", 0);
-  }
+  section1.style.display = scrollSection > 0.8 ? "flex" : "none";
+  section2.style.display = scrollSection > 2.2 ? "flex" : "none";
 
 }
 
 document.addEventListener("scroll", onScroll);
+document.addEventListener("resize", onScroll);
+if (screen.orientation) screen.orientation.addEventListener("change", onScroll);
+
+onScroll();
